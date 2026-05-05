@@ -1,0 +1,87 @@
+{
+    "sources": [
+        {
+            "DOI": "10.11144/Javeriana.PAPO19-1.edca",
+            "URL": "http://revistas.javeriana.edu.co/index.php/papelpol/article/view/10854",
+            "author": [
+                {
+                    "family": "Mardones A.",
+                    "given": "Roberto"
+                }
+            ],
+            "container-title": "Pap.polit.",
+            "id": "mardonesa.2014",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014,
+                        11
+                    ]
+                ]
+            },
+            "page": "3959",
+            "title": "La encrucijada de la democracia chilena: Una aproximación conceptual a la desafección política.",
+            "title-short": "La encrucijada de la democracia chilena",
+            "type": "article-journal",
+            "volume": "19"
+        },
+        {
+            "DOI": "10.15359/ree.20-1.17",
+            "URL": "https://www.revistas.una.ac.cr/index.php/EDUCARE/article/view/7497",
+            "author": [
+                {
+                    "family": "Muñoz-Labraña",
+                    "given": "Carlos"
+                },
+                {
+                    "family": "Martínez-Rodríguez",
+                    "given": "Rosendo"
+                },
+                {
+                    "family": "Muñoz-Grandón",
+                    "given": "Carlos"
+                }
+            ],
+            "container-title": "Rev. Electr. Educare",
+            "id": "muñoz-labraña2016",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        1
+                    ]
+                ]
+            },
+            "page": "116",
+            "title": "Perceptions of students about politics, political parties and individuals devoted to politics when ending high school education in chile",
+            "type": "article-journal",
+            "volume": "20"
+        },
+        {
+            "URL": "https://hdl.handle.net/10366/142679",
+            "author": [
+                {
+                    "family": "Mackenna",
+                    "given": "Bernardo"
+                }
+            ],
+            "container-title": "Revista Lationamericana de Opinión Pública",
+            "id": "mackenna2015",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        6
+                    ]
+                ]
+            },
+            "title": "Composición del electorado en elecciones con voto obligatorio y voluntario: Un estudio cuasi experimental de la participación electoral en chile",
+            "title-short": "Composición del electorado en elecciones con voto obligatorio y voluntario",
+            "type": "article-journal",
+            "volume": "vol 5"
+        }
+    ],
+    "project_biblios": []
+}

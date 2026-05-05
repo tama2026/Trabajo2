@@ -1,0 +1,7 @@
+"0","#| label: fig-educacion-voto"
+"0","#| fig-cap: ""Relación entre nivel educacional y participación electoral"""
+"0","#| echo: false"
+"0",""
+"0","grafico1"
+"1","[38;5;232m`geom_smooth()` using formula = 'y ~ x'[39m
+"

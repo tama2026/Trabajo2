@@ -1,0 +1,11 @@
+{
+    "entries": [
+        {
+            "file": "plantilla_informe.qmd",
+            "type": "tbl",
+            "id": "voto",
+            "suffix": "",
+            "title": "Distribución de la participación electoral"
+        }
+    ]
+}

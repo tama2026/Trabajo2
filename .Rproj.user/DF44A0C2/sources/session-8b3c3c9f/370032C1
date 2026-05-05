@@ -1,0 +1,33 @@
+{
+    "id": "370032C1",
+    "path": "~/Trabajo2/plantilla_informe.qmd",
+    "project_path": "plantilla_informe.qmd",
+    "type": "quarto_markdown",
+    "hash": "1915935384",
+    "contents": "",
+    "dirty": false,
+    "created": 1776804544949.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "rmdVisualMode": "true",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "149,0",
+        "scrollLine": "68",
+        "rmdVisualCollapsedChunks": "",
+        "rmdVisualModeLocation": "10355:4850",
+        "rmdVisualWrapConfigured": "true",
+        "docOutlineVisible": "1",
+        "ignored_words": "Nivel\n",
+        "docOutlineSize": "109"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1777953131,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1777953132032,
+    "read_only": false,
+    "read_only_alternatives": []
+}
