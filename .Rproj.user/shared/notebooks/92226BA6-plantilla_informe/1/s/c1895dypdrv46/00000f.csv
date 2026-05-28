@@ -1,0 +1,7 @@
+"0","#| echo: false"
+"0","#| warning: false"
+"0","#| message: false"
+"0",""
+"0","library(dplyr)"
+"0","items <- data %>%"
+"0","  select(confianza_partidos, participacion, info_politica, interes_politico)"

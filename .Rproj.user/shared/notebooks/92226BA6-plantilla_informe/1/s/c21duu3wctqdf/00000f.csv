@@ -3,3 +3,8 @@
 "0","#| message: false"
 "0",""
 "0","load(""output/data.RData"")"
+"0","ls()"
+"1","[1]"
+"1"," ""data"""
+"1","
+"

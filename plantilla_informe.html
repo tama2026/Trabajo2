@@ -119,6 +119,11 @@ div.csl-indent {
 </section>
 <section id="variables." class="level2">
 <h2 class="anchored" data-anchor-id="variables.">Variables.</h2>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "data"</code></pre>
+</div>
+</div>
 <p>Para continuar la investigación, pasaré a describir el conjunto de variables a utilizar.</p>
 <section id="descripción-de-variables." class="level3">
 <h3 class="anchored" data-anchor-id="descripción-de-variables.">Descripción de variables.</h3>
@@ -165,14 +170,14 @@ Tabla&nbsp;1: Distribución de la participación electoral
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">931</td>
-<td style="text-align: center;">32.44</td>
+<td style="text-align: center;">Sí votó</td>
+<td style="text-align: center;">1939</td>
+<td style="text-align: center;">68.08</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Sí</td>
-<td style="text-align: center;">1939</td>
-<td style="text-align: center;">67.56</td>
+<td style="text-align: center;">No votó</td>
+<td style="text-align: center;">909</td>
+<td style="text-align: center;">31.92</td>
 </tr>
 </tbody><tfoot>
 <tr class="odd">
@@ -359,6 +364,154 @@ Figura&nbsp;2: Relación entre nivel educacional e interés político
 <section id="conclusión." class="level2">
 <h2 class="anchored" data-anchor-id="conclusión.">Conclusión.</h2>
 <p>Para concluir, podemos decir que ambos gráficos sugieren que el nivel educacional no solo se asocia con comportamientos políticos concretos, como la participación electoral. Sino también se asocia con disposiciones subjetivas como el interés político, lo que refuerza su rol como un determinante central en la configuración de la relación entre ciudadanía y política.</p>
+</section>
+<section id="tabla-de-correlaciones." class="level2">
+<h2 class="anchored" data-anchor-id="tabla-de-correlaciones.">Tabla de correlaciones.</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">&nbsp;</td>
+<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">voto_bin</td>
+<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">confianza_partidos</td>
+<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">participacion</td>
+<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">info_politica</td>
+<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">interes_politico</td>
+<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">edad</td>
+</tr>
+<tr class="even">
+<td style="font-style: italic">voto_bin</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+</tr>
+<tr class="odd">
+<td style="font-style: italic">confianza_partidos</td>
+<td style="text-align: center; padding: 0.2cm;">0.047<span style="vertical-align:super;font-size:0.8em;">*</span></td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+</tr>
+<tr class="even">
+<td style="font-style: italic">participacion</td>
+<td style="text-align: center; padding: 0.2cm;">0.126<span style="vertical-align:super;font-size:0.8em;">***</span></td>
+<td style="text-align: center; padding: 0.2cm;">0.072<span style="vertical-align:super;font-size:0.8em;">***</span></td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+</tr>
+<tr class="odd">
+<td style="font-style: italic">info_politica</td>
+<td style="text-align: center; padding: 0.2cm;">0.101<span style="vertical-align:super;font-size:0.8em;">***</span></td>
+<td style="text-align: center; padding: 0.2cm;">0.102<span style="vertical-align:super;font-size:0.8em;">***</span></td>
+<td style="text-align: center; padding: 0.2cm;">0.080<span style="vertical-align:super;font-size:0.8em;">***</span></td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+</tr>
+<tr class="even">
+<td style="font-style: italic">interes_politico</td>
+<td style="text-align: center; padding: 0.2cm;">0.155<span style="vertical-align:super;font-size:0.8em;">***</span></td>
+<td style="text-align: center; padding: 0.2cm;">0.278<span style="vertical-align:super;font-size:0.8em;">***</span></td>
+<td style="text-align: center; padding: 0.2cm;">0.144<span style="vertical-align:super;font-size:0.8em;">***</span></td>
+<td style="text-align: center; padding: 0.2cm;">0.408<span style="vertical-align:super;font-size:0.8em;">***</span></td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+</tr>
+<tr class="odd">
+<td style="font-style: italic">edad</td>
+<td style="text-align: center; padding: 0.2cm;">0.351<span style="vertical-align:super;font-size:0.8em;">***</span></td>
+<td style="text-align: center; padding: 0.2cm;">-0.051<span style="vertical-align:super;font-size:0.8em;">**</span></td>
+<td style="text-align: center; padding: 0.2cm;">0.098<span style="vertical-align:super;font-size:0.8em;">***</span></td>
+<td style="text-align: center; padding: 0.2cm; color: #999999;">-0.007<span style="vertical-align:super;font-size:0.8em;"></span></td>
+<td style="text-align: center; padding: 0.2cm;">-0.098<span style="vertical-align:super;font-size:0.8em;">***</span></td>
+<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
+</tr>
+<tr class="even">
+<td colspan="7" style="text-align: right; border-bottom: double black; border-top: 1px solid black; font-style: italic; font-size: 0.9em;">Computed correlation used pearson-method with listwise-deletion.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>En general, las correlaciones observadas son <em>bajas a moderadas</em>, lo que indica asociaciones existentes, pero no muy fuertes entre las variables analizadas.</p>
+<p>En primer lugar, la variable voto_bin presenta correlaciones positivas con la mayoría de las variables, destacando su relación con la edad <strong>(r = 0.351)</strong>, que corresponde a una correlación moderada, lo que sugiere que las personas de mayor edad tienden a votar más. Asímismo, se observan correlaciones bajas pero de todas formas significativas, con las variables interés político <strong>(r = 0.155)</strong>, participación <strong>(r = 0.126)</strong> e información política <strong>(r = 0.101)</strong>.</p>
+<p>Por su parte, el interés político muestra una correlación moderada con la información política <strong>(r = 0.408)</strong>, indicando que quienes están más informados tienden también a mostrar mayor interés político. Además, presenta una correlación moderada con la confianza en partidos <strong>(r = 0.278)</strong> y baja con la participación <strong>(r = 0.144)</strong>.</p>
+<p>En cuanto a la edad, se observa una correlación negativa baja con el interés político <strong>(r = -0.098)</strong> y prácticamente nula con la información política <strong>(r = -0.007)</strong>, lo que sugiere que la edad no está fuertemente asociada con estas dimensiones de nuestras variables.</p>
+<p>Finalmente, la mayoría de las correlaciones son estadísticamente significativas (indicadas por asteríscos), aunque de <em>magnitud baja</em>, lo que de todas formas es común en estudios sociales.</p>
+</section>
+<section id="índice-escala-y-alfa-de-cronbach." class="level2">
+<h2 class="anchored" data-anchor-id="índice-escala-y-alfa-de-cronbach.">Índice (escala) y Alfa de Cronbach.</h2>
+<section id="alpha-de-cronbach." class="level3">
+<h3 class="anchored" data-anchor-id="alpha-de-cronbach.">Alpha de Cronbach.</h3>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Reliability analysis   
+Call: psych::alpha(x = items)
+
+  raw_alpha std.alpha G6(smc) average_r  S/N   ase mean   sd median_r
+      0.48      0.47    0.43      0.18 0.88 0.014  1.9 0.64     0.12
+
+    95% confidence boundaries 
+         lower alpha upper
+Feldt     0.44  0.48  0.51
+Duhachek  0.45  0.48  0.50
+
+ Reliability if an item is dropped:
+                   raw_alpha std.alpha G6(smc) average_r  S/N alpha se  var.r
+confianza_partidos      0.46      0.45    0.38     0.211 0.80    0.016 0.0305
+participacion           0.51      0.52    0.45     0.263 1.07    0.014 0.0241
+info_politica           0.37      0.37    0.30     0.166 0.59    0.019 0.0111
+interes_politico        0.19      0.22    0.16     0.085 0.28    0.023 0.0002
+                   med.r
+confianza_partidos 0.143
+participacion      0.280
+info_politica      0.143
+interes_politico   0.081
+
+ Item statistics 
+                      n raw.r std.r r.cor r.drop mean   sd
+confianza_partidos 2870  0.46  0.58  0.33   0.21  1.4 0.68
+participacion      2870  0.43  0.52  0.20   0.14  1.6 0.79
+info_politica      2870  0.77  0.64  0.46   0.33  3.0 1.40
+interes_politico   2870  0.76  0.74  0.65   0.47  1.7 1.07
+
+Non missing response frequency for each item
+                      1    2    3    4    5 miss
+confianza_partidos 0.72 0.19 0.08 0.01 0.00    0
+participacion      0.59 0.22 0.19 0.00 0.00    0
+info_politica      0.22 0.12 0.29 0.18 0.20    0
+interes_politico   0.61 0.18 0.12 0.06 0.03    0</code></pre>
+</div>
+</div>
+</section>
+<section id="creación-y-gráfico-del-índice." class="level3">
+<h3 class="anchored" data-anchor-id="creación-y-gráfico-del-índice.">Creación y gráfico del índice.</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="plantilla_informe_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="breve-interpretación." class="level2">
+<h2 class="anchored" data-anchor-id="breve-interpretación.">Breve interpretación.</h2>
+<p>El gráfico anterior nos muestra la distribución del índice de interés político según el nivel educacional (básica, media, técnica y universitaria), utilizando para esto diagramas de caja. Podemos obsrvar una tendencia positiva entre nivel educativo e interés político; las personas con educación básica presentan los niveles más bajos del índice (mediana más baja), a medida que aumenta el nivel educativo (media y técnica) el índice también aumenta gradialmente, se observa también que el grupo con educación universitaria muestra los valores más altos del índice con una mediana claramente superior.</p>
+<p>Si bien vemos que en todos los grupos hay cierta dispersión, los niveles más altos (sobretodo universitario) presentan mayor variabilidad, lo que indica diversidad en el interés político dentro del grupo. Se logran observar algunos valores atípicos en todos los niveles, lo que sugiere que hay casos individuales con niveles de interés político inusualmente altos.</p>
+<p>Finalmente podemos interpretar que el nivel educativo se aosica positivamente con el interés político, indicando que a mayor educación, existe mayor involucramiento y atención hacia los asuntos políticos. Los resultados expuestos evidencian que los niveles educatuvos más bajos concentran mayores niveles de desafección política, mientras que quienes poseen educación superior muestran mayor interés e involucramiento político.</p>
+<p>En conjunto, el gráfico logra respaldar la hipótesis de que el nivel educativo constituye un factor relevante en la configuración del interés político, mostrando una relación positiva entre ambas variables.</p>
 
 </section>
 
