@@ -1,0 +1,8 @@
+"0","#| label: tbl-descriptivos"
+"0","#| tbl-cap: ""Estadísticos descriptivos de edad y confianza en partidos políticos"""
+"0","#| tbl-cap-location: top"
+"0","#| warning: false"
+"0","#| echo: false"
+"0","#| message: false"
+"0",""
+"0","tabla_desc"

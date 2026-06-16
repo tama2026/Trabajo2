@@ -1,0 +1,32 @@
+"0","#| echo: false"
+"0","#| warning: false"
+"0","#| message: false"
+"0",""
+"0","library(psych)"
+"2","
+Adjuntando el paquete: ‘psych’
+
+"
+"2","The following object is masked from ‘package:modelsummary’:
+
+    SD
+
+"
+"2","The following objects are masked from ‘package:ggplot2’:
+
+    %+%, alpha
+
+"
+"0","alpha_result <- psych::alpha(items)"
+"0",""
+"0","alpha_result"
+"1","
+Reliability analysis "
+"1"," "
+"1"," 
+"
+"1","Call: "
+"1","psych::alpha(x = items)
+"
+"1","
+ "

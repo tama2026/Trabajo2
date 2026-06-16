@@ -512,6 +512,265 @@ interes_politico   0.61 0.18 0.12 0.06 0.03    0</code></pre>
 <p>Si bien vemos que en todos los grupos hay cierta dispersión, los niveles más altos (sobretodo universitario) presentan mayor variabilidad, lo que indica diversidad en el interés político dentro del grupo. Se logran observar algunos valores atípicos en todos los niveles, lo que sugiere que hay casos individuales con niveles de interés político inusualmente altos.</p>
 <p>Finalmente podemos interpretar que el nivel educativo se aosica positivamente con el interés político, indicando que a mayor educación, existe mayor involucramiento y atención hacia los asuntos políticos. Los resultados expuestos evidencian que los niveles educatuvos más bajos concentran mayores niveles de desafección política, mientras que quienes poseen educación superior muestran mayor interés e involucramiento político.</p>
 <p>En conjunto, el gráfico logra respaldar la hipótesis de que el nivel educativo constituye un factor relevante en la configuración del interés político, mostrando una relación positiva entre ambas variables.</p>
+</section>
+<section id="modelos-de-regresión." class="level2">
+<h2 class="anchored" data-anchor-id="modelos-de-regresión.">Modelos de regresión.</h2>
+<section id="tabla-de-regresiones." class="level3">
+<h3 class="anchored" data-anchor-id="tabla-de-regresiones.">Tabla de regresiones.</h3>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">&nbsp;</td>
+<td colspan="3" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">Modelo 1</td>
+<td colspan="3" data-quarto-table-cell-role="th" style="text-align: center; border-top: double; font-style: normal; font-weight: bold; padding: 0.2cm;">Modelo 2</td>
+</tr>
+<tr class="even">
+<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">Predictors</td>
+<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">Estimates</td>
+<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">std. Error</td>
+<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">p</td>
+<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">Estimates</td>
+<td style="text-align: center; border-bottom: 1px solid; font-style: italic; font-weight: normal;">std. Error</td>
+<td style="text-align: center;">p</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">(Intercept)</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">1.65</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.03</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"><strong>&lt;0.001</strong></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.88</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.06</td>
+<td style="text-align: center;"><strong>&lt;0.001</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">educacion cat [Media]</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.16</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.04</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"><strong>&lt;0.001</strong></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.17</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.04</td>
+<td style="text-align: center;"><strong>&lt;0.001</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">educacion cat [Técnica]</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.24</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.04</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"><strong>&lt;0.001</strong></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.29</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.04</td>
+<td style="text-align: center;"><strong>&lt;0.001</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">educacion cat<br>
+[Universitaria]</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.53</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.04</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"><strong>&lt;0.001</strong></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.52</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.04</td>
+<td style="text-align: center;"><strong>&lt;0.001</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">edad</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.00</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.00</td>
+<td style="text-align: center;"><strong>&lt;0.001</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">confianza partidos</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;"></td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.42</td>
+<td style="text-align: left; padding: 0.2cm; vertical-align: top;">0.01</td>
+<td style="text-align: center;"><strong>&lt;0.001</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">Observations</td>
+<td colspan="3" style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">2870</td>
+<td colspan="3" style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm; border-top: 1px solid;">2870</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">R<sup>2</sup> / R<sup>2</sup> adjusted</td>
+<td colspan="3" style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">0.079 / 0.079</td>
+<td colspan="3" style="text-align: left; padding: 0.2cm; vertical-align: top; padding-top: 0.1cm; padding-bottom: 0.1cm;">0.278 / 0.277</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+<p>Los resultados de los modelos de regresión muestran que el nivel educativo tiene un efecto positivo y estadísticamente significativo sobre el interés político. En el Modelo 1, en comparación con la categoría de referencia (educación básica), quienes poseen educación media presentan un aumento de 0.16 unidades en el índice de interés político (p &lt; 0.001), quienes tienen educación técnica aumentan en 0.24 unidades (p &lt; 0.001), y quienes alcanzan educación universitaria muestran un incremento de 0.53 unidades (p &lt; 0.001). Estos resultados evidencian un claro gradiente educacional en el interés político.</p>
+<p>Al incorporar variables de control en el Modelo 2, los efectos de la educación se mantienen e incluso aumentan levemente: educación media (0.17, p &lt; 0.001), educación técnica (0.29, p &lt; 0.001) y educación universitaria (0.52, p &lt; 0.001). Esto sugiere que la relación entre educación e interés político es robusta y no se explica por la inclusión de otras variables.</p>
+<p>Respecto a las variables de control, la edad presenta un coeficiente de 0.00 (p &lt; 0.001), lo que indica un efecto estadísticamente significativo pero sustantivamente muy pequeño sobre el interés político. En contraste, la confianza en los partidos políticos muestra un efecto considerablemente mayor, con un coeficiente de 0.42 (p &lt; 0.001), posicionándose como uno de los predictores más relevantes del modelo.</p>
+<p>Finalmente, la capacidad explicativa del modelo mejora sustancialmente al incluir estas variables adicionales. Mientras el Modelo 1 presenta un R² de 0.079 (R² ajustado = 0.079), el Modelo 2 alcanza un R² de 0.278 (R² ajustado = 0.277), lo que indica un incremento importante en la varianza explicada del interés político.</p>
+<p>En conjunto, estos resultados permiten concluir que el nivel educativo es un factor clave en la explicación del interés político, y que su efecto se mantiene incluso al considerar otras variables relevantes, destacando además el rol significativo de la confianza en los partidos políticos.</p>
+</section>
+<section id="gráfico-de-valores-predichos." class="level3">
+<h3 class="anchored" data-anchor-id="gráfico-de-valores-predichos.">Gráfico de valores predichos.</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="plantilla_informe_files/figure-html/unnamed-chunk-18-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>El gráfico de valores predichos muestra una relación positiva y monotónica entre el nivel educativo y el índice de interés político. En particular, los valores estimados aumentan desde aproximadamente 1.63 en el nivel básico a 1.80 en educación media, 1.92 en educación técnica y 2.15 en educación universitaria.</p>
+<p>Esta tendencia es consistente con los resultados del modelo de regresión, donde los coeficientes asociados a cada nivel educativo son positivos y estadísticamente significativos. Asimismo, los intervalos de confianza son relativamente estrechos y presentan escasa superposición, lo que refuerza la evidencia de diferencias sustantivas entre los grupos educativos.</p>
+</section>
+</section>
+<section id="regresión-logística." class="level2">
+<h2 class="anchored" data-anchor-id="regresión-logística.">Regresión logística.</h2>
+<div class="cell">
+<div class="cell-output-display">
+<!-- preamble start -->
+
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
+
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_6z8kmmouei6727kdg1zp = TinyTable.createTableFunctions("tinytable_6z8kmmouei6727kdg1zp");
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '18', j: 2 } ], css_id: 'tinytable_css_3d7cagy1b5vczoqki47g',}, 
+          { positions: [ { i: '12', j: 2 } ], css_id: 'tinytable_css_jrhk0amd84y4vppxed3h',}, 
+          { positions: [ { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 }, { i: '5', j: 2 }, { i: '6', j: 2 }, { i: '7', j: 2 }, { i: '8', j: 2 }, { i: '9', j: 2 }, { i: '10', j: 2 }, { i: '11', j: 2 }, { i: '13', j: 2 }, { i: '14', j: 2 }, { i: '15', j: 2 }, { i: '16', j: 2 }, { i: '17', j: 2 } ], css_id: 'tinytable_css_2hrtxbsbnil3ahf43dk2',}, 
+          { positions: [ { i: '0', j: 2 } ], css_id: 'tinytable_css_5s0qrtfwv2fo98rdkynw',}, 
+          { positions: [ { i: '18', j: 1 } ], css_id: 'tinytable_css_7jen5yt6bjqn9j9p58t1',}, 
+          { positions: [ { i: '12', j: 1 } ], css_id: 'tinytable_css_qsmhgv3a5vmhjwvdnl2r',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '5', j: 1 }, { i: '6', j: 1 }, { i: '7', j: 1 }, { i: '8', j: 1 }, { i: '9', j: 1 }, { i: '10', j: 1 }, { i: '11', j: 1 }, { i: '13', j: 1 }, { i: '14', j: 1 }, { i: '15', j: 1 }, { i: '16', j: 1 }, { i: '17', j: 1 } ], css_id: 'tinytable_css_8x93ob2lf543hyg3yxx2',}, 
+          { positions: [ { i: '0', j: 1 } ], css_id: 'tinytable_css_hgdtfixjzmiofahw01zk',}, 
+          ];
+
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_6z8kmmouei6727kdg1zp.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_6z8kmmouei6727kdg1zp td.tinytable_css_3d7cagy1b5vczoqki47g, #tinytable_6z8kmmouei6727kdg1zp th.tinytable_css_3d7cagy1b5vczoqki47g {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center }
+    #tinytable_6z8kmmouei6727kdg1zp td.tinytable_css_jrhk0amd84y4vppxed3h, #tinytable_6z8kmmouei6727kdg1zp th.tinytable_css_jrhk0amd84y4vppxed3h {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center }
+    #tinytable_6z8kmmouei6727kdg1zp td.tinytable_css_2hrtxbsbnil3ahf43dk2, #tinytable_6z8kmmouei6727kdg1zp th.tinytable_css_2hrtxbsbnil3ahf43dk2 { text-align: center }
+    #tinytable_6z8kmmouei6727kdg1zp td.tinytable_css_5s0qrtfwv2fo98rdkynw, #tinytable_6z8kmmouei6727kdg1zp th.tinytable_css_5s0qrtfwv2fo98rdkynw {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: center }
+    #tinytable_6z8kmmouei6727kdg1zp td.tinytable_css_7jen5yt6bjqn9j9p58t1, #tinytable_6z8kmmouei6727kdg1zp th.tinytable_css_7jen5yt6bjqn9j9p58t1 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.08em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: left }
+    #tinytable_6z8kmmouei6727kdg1zp td.tinytable_css_qsmhgv3a5vmhjwvdnl2r, #tinytable_6z8kmmouei6727kdg1zp th.tinytable_css_qsmhgv3a5vmhjwvdnl2r {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: left }
+    #tinytable_6z8kmmouei6727kdg1zp td.tinytable_css_8x93ob2lf543hyg3yxx2, #tinytable_6z8kmmouei6727kdg1zp th.tinytable_css_8x93ob2lf543hyg3yxx2 { text-align: left }
+    #tinytable_6z8kmmouei6727kdg1zp td.tinytable_css_hgdtfixjzmiofahw01zk, #tinytable_6z8kmmouei6727kdg1zp th.tinytable_css_hgdtfixjzmiofahw01zk {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.08em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: left }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_6z8kmmouei6727kdg1zp" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1"> </th>
+                <th scope="col" data-row="0" data-col="2">(1)</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">(Intercept)</td>
+                  <td data-row="1" data-col="2">-3.070</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1"></td>
+                  <td data-row="2" data-col="2">(0.241)</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="1">educacion_catMedia</td>
+                  <td data-row="3" data-col="2">0.529</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="1"></td>
+                  <td data-row="4" data-col="2">(0.151)</td>
+                </tr>
+                <tr>
+                  <td data-row="5" data-col="1">educacion_catTécnica</td>
+                  <td data-row="5" data-col="2">0.906</td>
+                </tr>
+                <tr>
+                  <td data-row="6" data-col="1"></td>
+                  <td data-row="6" data-col="2">(0.149)</td>
+                </tr>
+                <tr>
+                  <td data-row="7" data-col="1">educacion_catUniversitaria</td>
+                  <td data-row="7" data-col="2">1.513</td>
+                </tr>
+                <tr>
+                  <td data-row="8" data-col="1"></td>
+                  <td data-row="8" data-col="2">(0.153)</td>
+                </tr>
+                <tr>
+                  <td data-row="9" data-col="1">edad</td>
+                  <td data-row="9" data-col="2">0.011</td>
+                </tr>
+                <tr>
+                  <td data-row="10" data-col="1"></td>
+                  <td data-row="10" data-col="2">(0.003)</td>
+                </tr>
+                <tr>
+                  <td data-row="11" data-col="1">confianza_partidos</td>
+                  <td data-row="11" data-col="2">1.242</td>
+                </tr>
+                <tr>
+                  <td data-row="12" data-col="1"></td>
+                  <td data-row="12" data-col="2">(0.077)</td>
+                </tr>
+                <tr>
+                  <td data-row="13" data-col="1">Num.Obs.</td>
+                  <td data-row="13" data-col="2">2870</td>
+                </tr>
+                <tr>
+                  <td data-row="14" data-col="1">AIC</td>
+                  <td data-row="14" data-col="2">3493.4</td>
+                </tr>
+                <tr>
+                  <td data-row="15" data-col="1">BIC</td>
+                  <td data-row="15" data-col="2">3529.2</td>
+                </tr>
+                <tr>
+                  <td data-row="16" data-col="1">Log.Lik.</td>
+                  <td data-row="16" data-col="2">-1740.717</td>
+                </tr>
+                <tr>
+                  <td data-row="17" data-col="1">F</td>
+                  <td data-row="17" data-col="2">73.522</td>
+                </tr>
+                <tr>
+                  <td data-row="18" data-col="1">RMSE</td>
+                  <td data-row="18" data-col="2">0.46</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
+</div>
+</div>
 
 </section>
 

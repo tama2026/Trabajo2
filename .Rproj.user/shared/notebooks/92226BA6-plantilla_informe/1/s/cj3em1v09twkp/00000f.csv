@@ -1,0 +1,8 @@
+"0","#| label: tbl-voto"
+"0","#| tbl-cap: ""Distribución de la participación electoral"""
+"0","#| tbl-cap-location: top"
+"0","#| warning: false"
+"0","#| echo: false"
+"0","#| message: false"
+"0",""
+"0","tabla_voto"
